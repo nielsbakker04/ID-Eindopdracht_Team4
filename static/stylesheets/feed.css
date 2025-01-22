@@ -1,0 +1,292 @@
+/* VARIABELEN OPSTELLEN */
+
+:root{
+    --color-green: #76984B;
+    --color-red: #D02F2F;
+    --color-blue: #445FA8;
+    --color-yellow: #EAD142;
+    --color-brown: #7F4F24;
+    --color-lightGrey: #F8F8F8;
+    --fontsize-h1: 18px;
+    --fontsize-h2: 15px;
+}
+
+h1{
+    font-size: var(--fontsize-h1);
+    margin: 0;
+}
+
+.content{
+    margin-bottom: 5em;
+}
+
+/* NAV */
+
+.nav-item:nth-of-type(4){
+    background-color: white;
+}
+
+/* top */
+
+.top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid #ddd; */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.switch input[type="radio"] {
+    display: none; 
+}
+
+.switch label {
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #555;
+    cursor: pointer;
+    text-align: center;
+}
+
+.switch .divider {
+    width: 1px;
+    background-color: #ddd;
+    height: 100%;
+}
+
+.switch input[type="radio"]:checked + label {
+    font-weight: 500;
+    color: #000;
+    background-color: #f7f7f7; 
+}
+
+
+/* create */
+
+.create{
+    margin-block: 1em;
+    position: relative;
+    height: 80px;
+    width: 100%;
+    border: solid 1px rgb(226, 226, 226);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between ;
+
+}
+
+.create input[type=text]{
+    width: 325px;
+    height: 45px;
+    border: none;
+    padding-left: 10px;
+    font-size: 12px;
+    border-radius: 5px;
+
+}
+
+.create input[type=text]::placeholder{
+    font-size: 10px;
+    opacity: .5;
+    font-family: "Montserrat";
+}
+
+
+.create input[type=text]:focus{
+   border: none;
+   outline: none;
+}
+
+.edit{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    justify-content: left;
+    gap: 1em;
+    border-radius: 5px;
+    height: 35px;
+    background-color: var(--color-lightGrey);
+}
+
+.edit img:first-of-type{
+    transform: scale(1.3);
+}
+
+.edit img{
+    max-width: 25px;
+    max-height: 15px;
+    opacity: .5;
+}
+
+/* ------- */
+/* POST */
+
+/* profile */
+
+
+.profile-picture{
+    object-fit: cover;
+    border-radius: 100vw;
+}
+
+
+.post-1{
+    margin-block: 1.5em;
+    position: relative;
+}
+
+.post-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-top img{
+    width: 13px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.profile img{
+    width: 35px;
+    height: 35px;
+}
+
+.text p:first-of-type{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.text p:last-of-type{
+    font-weight: 400;
+    font-size: 12px;
+    opacity: .4;
+}
+
+.post-img{
+    margin-block: 1em;
+    width: 340px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.post-1 input[type=text]{
+    width: 325px;
+    border: none;
+    background-color: #F8F8F8;
+    font-size: 10px;
+    padding: 10px 8px;
+    border-radius: 5px;
+    font-family: "Montserrat";
+}
+
+.post-1 input[type=text]:focus{
+    outline: none;
+}
+
+.post-1 input[type=text]::placeholder{
+    color: #969595;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Montserrat";
+}
+
+.post-text{
+    font-size: 12px;
+    margin-left: 51px;
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+
+
+.post-text2{
+    font-size: 10px;
+    opacity: .75;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+
+/* reactie */
+
+.antwoord{
+    margin-left: 51px;
+}
+
+.antwoord .profile img{
+    width: 25px;
+    height: 25px;
+}
+
+.antwoord .profile p{
+    font-size: 10px;
+}
+
+.antwoord .post-text{
+    margin-left: 0;
+    opacity: .7;
+    font-size: 10px;
+}
+
+
+/* lines */
+
+.line-left{
+    width: 1px;
+    height: 90px;
+    background-color: lightgrey;
+    position: absolute;
+    left: 17.5px;
+    top: 35px;
+}
+
+.line-bottom{
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    background-color: lightgrey;
+    left: 17.5px;
+    top: 125px;
+}
+
+.post-divider{
+    width: 100%;
+    height: 1px;
+    background-color: lightgrey;
+    border-radius: 100vw;
+    opacity: .5;
+}
+
+.reacties{
+    display: flex;
+    gap: .5em;
+    align-items: center;
+    opacity: .6;
+    margin-bottom: 1em;
+}
+
+.reacties img{
+    width: 35px;
+}
+
+.reacties p{
+    text-decoration: underline;
+    font-size: 10px;
+}
+
+.post-txt{
+    margin-top: 1em;
+    font-size: 12px;
+}

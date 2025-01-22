@@ -1,0 +1,202 @@
+/* VARIABELEN OPSTELLEN */
+
+:root{
+    --color-green: #76984B;
+    --color-red: #D02F2F;
+    --color-blue: #445FA8;
+    --color-yellow: #EAD142;
+    --color-brown: #7F4F24;
+    --color-lightGrey: #F8F8F8;
+    --fontsize-h1: 18px;
+    --fontsize-h2: 15px;
+}
+
+h1{
+    font-size: var(--fontsize-h1);
+    margin: 0;
+}
+
+/* NAV */
+
+
+.nav-item:nth-of-type(2){
+    background-color: white;
+}
+
+/* DETAILPAGINA PLANT */
+
+
+.plant-detail-bg{
+    position: absolute;
+    width: 100%;
+    height: 433px;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+
+.tasks-section{
+    box-sizing: border-box;
+    position: relative;
+    background-color: white;
+    z-index: 1;
+    margin-top: 366px;
+    height: 750px;
+    padding: 25px ;
+    width: 100%;
+    scale: 1.15;
+    border-radius: 30px;
+
+}
+
+/* tasks */
+
+.task-wrap{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-block: 1em;
+}
+
+.task-img{
+    width: 60px;
+    height: 60px;
+}
+
+.task-text p{
+    font-size: 11px;
+    font-weight: 100;
+    opacity: .5;
+}
+
+.task-text p:nth-of-type(1){
+    font-weight: 600;
+    font-size: 13px;
+    opacity: 1;
+}
+
+/* -------------- */
+/* Plant informatie plagina */
+
+.plant-details{
+    margin-top: 1em;
+    width: 280px;
+}
+
+.section-title{
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.section-p{
+    font-size: 12px;
+}
+
+.info-section{
+    display: grid;
+    gap: 0.35em;
+    padding-block: 1em;
+    border-bottom: 1px solid lightgray;
+}
+
+/* ----------- */
+/* PLANT FEATURES SECTIE */
+
+.plant-features{
+    display: grid;
+    gap: .5em;
+    margin-block: 1em;
+}
+
+.plant-feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    background-color: var(--color-yellow);
+    border-radius: 100vw;
+    padding-inline: 5px;
+}
+
+.feature-left{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.feature-left img{
+    width: 40px;
+}
+
+.feature-txt{
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.feature-txt p:first-of-type{
+    font-weight: 500;
+}
+
+.three-dots{
+    width: 13px;
+    margin-right: 1em;
+}
+
+.plant-feature:nth-of-type(2){
+    background-color: var(--color-blue);
+    color: rgb(242, 242, 242);
+}
+
+.plant-feature:nth-of-type(3){
+    background-color: var(--color-brown);
+    color: rgb(242, 242, 242);
+}
+
+/* ----------- */
+/* ADOPTEREN SECTIE */
+
+.adopt{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 7.5em;
+}
+
+.amount{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.amount-btn{
+    height: 20px;
+    width: 20px;
+    background-color: var(--color-lightGrey);
+    border-radius: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.amount p{
+    font-weight: 500;
+}
+
+.aantal{
+    margin-top: 2em;
+    font-size: 13px;
+    margin-bottom: .5em;
+}
+
+.adopt-btn{
+    background-color: var(--color-green);
+    color: white;
+    border-radius: 100vw;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 5px 30px;
+    border: none;
+}

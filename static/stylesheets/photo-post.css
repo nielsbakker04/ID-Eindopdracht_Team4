@@ -1,0 +1,107 @@
+/* VARIABELEN OPSTELLEN */
+
+:root{
+    --color-green: #76984B;
+    --color-red: #D02F2F;
+    --color-blue: #445FA8;
+    --color-yellow: #EAD142;
+    --color-brown: #7F4F24;
+    --color-lightGrey: #F8F8F8;
+    --fontsize-h1: 18px;
+    --fontsize-h2: 15px;
+}
+
+h1{
+    font-size: var(--fontsize-h1);
+    margin: 0;
+}
+
+/* NAV */
+
+.nav-item:nth-of-type(3){
+    background-color: white;
+}
+
+.content{
+    display: grid;
+    gap: 1em;
+}
+
+
+/* ADVERTENTIE PAGINA */
+
+/* foto's */
+
+.advertentie-img-big{
+    width: 100%;
+    height: 344px;
+    border-radius: 7.5px;
+    object-fit: cover;
+}
+
+
+
+/* INFORMATIE VAKKEN */
+
+.input-wrap{
+    display: grid;
+    gap: .25em;
+}
+
+input[type=text]{
+    width: 320px;
+    border: none;
+    background-color: #F8F8F8;
+    font-size: 10px;
+    padding: 10px 8px;
+    border-radius: 5px;
+    font-family: "Montserrat";
+}
+
+input[type=text]:focus{
+    outline: none;
+}
+
+input[type=text]::placeholder{
+    color: #969595;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Montserrat";
+}
+
+.button{    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-green);
+    width: 340px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    text-decoration: none;
+    margin-top: 1em;
+    margin-bottom: 7em;
+}
+
+/* locatie / personen toevoegen */
+
+.edit-photo{
+    display: grid;
+    gap: .5em;
+}
+
+.location{
+    display: flex;
+    justify-content: space-between;
+    opacity: .35;
+}
+
+.icon{
+    width: 15px;
+    height: 15px;
+}
+
+.location p{
+    font-size: 12px;
+}

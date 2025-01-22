@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Startscherm</title>
+    <link rel="stylesheet" href="./static/stylesheets/style.css">
+    <link rel="stylesheet" href="./static/stylesheets/catalogus.css">
+</head>
+
+<body>
+    <div class="phone-frame">
+        <div class="screen-home">
+
+            <header>
+                <section class="header">
+                    <img class="header-notification-icon" src="./static/img/icons/notification-alert.png"
+                        alt="Notifcations">
+                    <img class="header-profile-picture" src="./static/img/profiles/profile-picture-julia.png"
+                        alt="Profile picture Julia van 't Zand">
+                </section>
+            </header>
+
+            <section class="content">
+
+                <section class="heading">
+
+                    <section class="heading-left">
+                        <h1>Plant catalogus</h1>
+                        <div class="dropdown-container">
+                            <div class="dropdown">
+                                <button class="dropdown-button">Soort plant &#9662;</button>
+                                <div class="dropdown-menu">
+                                    <a href="#">Groente</a>
+                                    <a href="#">Fruit</a>
+                                    <a href="#">Kruiden</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <button class="dropdown-button">Kleur &#9662;</button>
+                                <div class="dropdown-menu">
+                                    <a href="#">Groen</a>
+                                    <a href="#">Rood</a>
+                                    <a href="#">Geel</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <button class="dropdown-button">Status &#9662;</button>
+                                <div class="dropdown-menu">
+                                    <a href="#">Groeien</a>
+                                    <a href="#">Oogsten</a>
+                                    <a href="#">Geoogst</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <a href="./add-plant.html" class="add-flower">
+                        <p>+</p>
+                    </a>
+                </section>
+
+                <section class="plants-grid">
+                    <a href="./oogst-klaar.html" class="plant-item">
+                        <img class="plant-bg" src="./static/img/flowers/coreopsis-ready.png" alt="Coreopsis">
+                    </a>
+                    <a href="./plant-detail.html" class="plant-item">
+                        <img class="plant-bg" src="./static/img/flowers/plant-pokeberry.png" alt="Coreopsis">
+                    </a>
+                    <a href="./plant-detail.html" class="plant-item">
+                        <img class="plant-bg" src="./static/img/flowers/plant-cosmos.png" alt="Coreopsis">
+                    </a>
+                    <a href="./plant-detail.html" class="plant-item">
+                        <img class="plant-bg" src="./static/img/flowers/plant-solidago.png" alt="Coreopsis">
+                    </a>
+                </section>
+
+            </section>
+
+            <footer>
+                <section class="navbar">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="home.html">
+                                <img class="nav-icon" src="./static/img/icons/house-w.png" alt="Home">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="plant-catalogus.html">
+                                <img class="nav-icon" src="./static/img/icons/bloemen.png" alt="Bloemen">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="camera.html">
+                                <img class="nav-icon" src="./static/img/icons/Cameraw.png" alt="Camera">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="people.html">
+                                <img class="nav-icon" src="./static/img/icons/people-w.png" alt="People">
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+            </footer>
+
+        </div>
+    </div>
+    <script src="./static/scripts/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+/* VARIABELEN OPSTELLEN */
+
+:root{
+    --color-green: #76984B;
+    --color-red: #D02F2F;
+    --color-blue: #445FA8;
+    --color-yellow: #EAD142;
+    --color-brown: #7F4F24;
+    --color-lightGrey: #F8F8F8;
+    --fontsize-h1: 18px;
+    --fontsize-h2: 15px;
+}
+
+h1{
+    font-size: var(--fontsize-h1);
+    margin: 0;
+}
+
+/* CAMERA SCHERM */
+
+.phone-frame{
+    background-image: url(../img/camera-bg.png);
+    background-size: contain;
+}
+
+.header{
+    justify-content: left;
+}
+
+.screen-home{
+    overflow: hidden;
+    width: 380px;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content{
+    height: 50px;
+    background-color: #3a3a3a5c;
+    backdrop-filter: blur(20px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* buttons */
+
+.camera-btn{
+    background-color: #323232;
+    height: 60px;
+    width: 60px;
+    border-radius: 100vw;
+    border: solid white 1px;
+}
+
+.camera-btn2{
+    width: 40px;
+}

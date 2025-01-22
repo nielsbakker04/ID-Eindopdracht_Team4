@@ -1,0 +1,160 @@
+
+/* VARIABELEN OPSTELLEN */
+
+:root{
+    --color-green: #76984B;
+    --color-red: #D02F2F;
+    --color-blue: #445FA8;
+    --color-yellow: #EAD142;
+    --color-brown: #7F4F24;
+    --color-lightGrey: #F8F8F8;
+    --fontsize-h1: 18px;
+    --fontsize-h2: 15px;
+}
+
+h1{
+    font-size: var(--fontsize-h1);
+    margin: 0;
+}
+
+/* NAV */
+
+.nav-item:nth-of-type(2){
+    background-color: white;
+}
+
+
+/* HEADING */
+
+.heading{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 1em;
+   gap: 0.5em;
+}
+
+.heading-left{
+    display: grid;
+    gap: .5em;
+
+}
+
+/* dropdown buttons */
+
+.dropdown-container {
+    display: flex;
+    gap: 10px;
+}
+
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-button {
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #333;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: .5;
+}
+
+.dropdown-menu {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border: 1px solid rgba(221, 221, 221, 0.223);
+    border-radius: 5px;
+    z-index: 100;
+    width: 100%;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 12px;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown.active .dropdown-menu {
+    display: block;
+}
+
+/* flower add button */
+
+.add-flower{
+    border-radius: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: var(--color-green);
+    color: white;
+    height: 25px;
+    width: 25px;
+    font-size: 20px;
+    padding: 0;
+}
+
+/* PLANTEN GRID */
+
+.plants-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 2em;
+
+}
+
+.plant-item{
+    width: 164px;
+    height: 164px;
+}
+
+.plant-bg{
+    height: 100%;
+    width: 100%;
+}
+
+/* zoekbalk */
+
+.searchbar input[type=text]{
+    width: 300px;
+    border: none;
+    background-color: #F8F8F8;
+    font-size: 10px;
+    padding: 8px 10px 8px 30px;
+    margin-top: 1em;
+    border-radius: 5px;
+}
+
+.searchbar input[type=text]:focus{
+    outline: none;
+}
+
+.searchbar input[type=text]::placeholder{
+    color: #969595;
+}
+
+.searchbar{
+    position: relative;
+}
+
+.searchbar img {
+    position: absolute;
+    left: 10px;
+    top: 47.5%;
+    height: 10px;
+    width: 10px;
+}

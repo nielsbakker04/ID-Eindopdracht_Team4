@@ -1,0 +1,172 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* VARIABELEN OPSTELLEN */
+
+:root{
+    --color-green: #76984B;
+    --color-red: #D02F2F;
+    --color-blue: #445FA8;
+    --color-yellow: #EAD142;
+    --color-brown: #7F4F24;
+    --color-lightGrey: #F8F8F8;
+    --fontsize-h1: 18px;
+    --fontsize-h2: 15px;
+}
+
+/* SCHERMAFMETINGEN */
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.phone-frame {
+    position: relative !important;
+    min-width: 380px;
+    max-width: 380px;
+    min-height: 824px;
+    max-height: 824px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transform: scale(1);
+}
+
+.screen-home{
+    position: relative;
+    overflow: scroll;
+}
+
+.content{
+    padding-inline: 20px;
+    padding-block: 25px;
+}
+
+
+p, h1, h2, h3, h4, button, label, a{
+    font-family: "Montserrat";
+    margin: 0;
+}
+
+/* FONT STYLING */
+
+.h2{
+    font-size: var(--fontsize-h2);
+    font-weight: 600;
+}
+
+.undertitle{
+    font-size: 10px;
+    color: #777676;
+    opacity: .65;
+    font-weight: 300;
+}
+
+/* HEADER BOVENAAN */
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 1em;
+    padding-inline: 20px;
+    padding-top: 25px;
+}
+
+.header-notification-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.header-profile-picture{
+    width: 35px;
+    height: 35px;
+}
+
+.back-btn{
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 20px;
+    z-index: 10;
+}
+
+header{
+    display: flex;
+    align-items: center;
+}
+
+/* ---------------- */
+/* NAVIGATIE BALK */
+/* ---------------- */
+
+/* footer{
+    position: absolute;
+    left: 50px;
+    bottom: 25px;
+} */
+
+.navbar{
+    position: fixed;
+    bottom: 25px;
+    width: 280px;
+    height: 58px;
+    top: 745px;
+    left: 50px;
+    border-radius: 100vw;
+    background-color: #9e9c9ca5;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 15;
+}
+
+.nav-list{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar li{
+    margin-inline: 5px;
+    width: 100%;
+    display: flex;
+    width: 50px;
+    height: 50px;   
+    align-items: center; 
+}
+
+.nav-item{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;   
+    border-radius: 1000vw;
+}
+
+.nav-icon{
+    margin: 0;
+    width: 25px;
+    height: 25px;
+}

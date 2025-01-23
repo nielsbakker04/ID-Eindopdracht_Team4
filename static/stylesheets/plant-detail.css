@@ -45,7 +45,7 @@ h1{
     background-color: white;
     z-index: 1;
     margin-top: 366px;
-    height: 750px;
+    height: 1500px;
     padding: 25px ;
     width: 100%;
     scale: 1.15;
@@ -77,4 +77,16 @@ h1{
     font-weight: 600;
     font-size: 13px;
     opacity: 1;
+}
+
+.calender{
+    width: 290px;
+    height: 220px;
+    margin-top: 1em;
+}
+
+
+.calender-i{
+    width: 125px;
+    margin-top: 1em;
 }

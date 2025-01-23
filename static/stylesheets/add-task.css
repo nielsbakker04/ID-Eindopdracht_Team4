@@ -1,0 +1,119 @@
+/* VARIABELEN OPSTELLEN */
+
+:root{
+    --color-green: #76984B;
+    --color-red: #D02F2F;
+    --color-blue: #445FA8;
+    --color-yellow: #EAD142;
+    --color-brown: #7F4F24;
+    --color-lightGrey: #F8F8F8;
+    --fontsize-h1: 18px;
+    --fontsize-h2: 15px;
+}
+
+
+/* NAV */
+
+
+.nav-item:nth-of-type(1){
+    background-color: white;
+}
+
+/* TASK TOEVOEGEN */
+
+.task-options{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5em;
+    margin-top: 2em;
+}
+
+.task-option{
+    background-color: var(--color-lightGrey);
+    width: 140px;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    font-size: 11px;
+    padding: 5px 12.5px;
+    color: grey;
+    border-radius: 5px;
+}
+
+.task-option img{
+    width: 15px;
+    height: 15px;
+}
+
+/* planten */
+
+.plant{
+    margin-top: 2em;
+}
+
+.plant>p{
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: .5em;
+}
+
+.plants{
+    display: flex;
+    width: 340px;
+    justify-content: space-between;
+}
+
+.taak-plant{
+    display: flex;
+    align-items: center;
+    border-radius: 100vw;
+    justify-content: center;
+    padding-inline: 10px;
+    padding-block: 2.5px;
+    font-size: 12px;
+    height: 15px;
+}
+
+.taak-plant:nth-of-type(1){
+    background-color: #EAD142;
+    color: #FFF7CB;
+}
+
+#plant2{
+    background-color: #D02F2F;
+    color: #FFB4B4;
+}
+
+#plant3{
+    background-color: #F0EEEE;
+    color: black;
+}
+
+#plant4{
+    background-color: #76984B;
+    color: #C1FF9B;
+}
+
+.plant>img{
+    width: 200px;
+}
+
+/* button */
+
+.button-wrap{
+    width: 100%;
+}
+
+.button{    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-green);
+    width: 320px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    text-decoration: none;
+    margin-top: 2em;
+}

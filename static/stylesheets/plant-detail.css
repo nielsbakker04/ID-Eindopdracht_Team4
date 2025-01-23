@@ -90,3 +90,24 @@ h1{
     width: 125px;
     margin-top: 1em;
 }
+
+.add-flower{
+    text-decoration: none;
+    border-radius: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: var(--color-green);
+    color: white;
+    height: 20px;
+    width: 20px;
+    font-size: 10px;
+    padding: 0;
+}
+
+.title-btn{
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+}

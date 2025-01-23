@@ -43,3 +43,21 @@ document.addEventListener('click', (event) => {
         });
     }
 });
+
+
+// Accordion bij FAQ pagina 
+
+document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+      const isOpen = button.getAttribute('aria-expanded') === 'true';
+      button.setAttribute('aria-expanded', !isOpen);
+  
+      const answer = button.nextElementSibling;
+      if (!isOpen) {
+        answer.style.display = 'block';
+      } else {
+        answer.style.display = 'none';
+      }
+    });
+  });
+  

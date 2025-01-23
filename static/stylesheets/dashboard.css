@@ -89,7 +89,6 @@ h1{
 
 .takenlijst h2{
     font-size: var(--fontsize-h2);
-    margin-top: 2em;
 }
 
 .takenlijst p{
@@ -227,4 +226,27 @@ h1{
 
 .afgerond{
     opacity: .5;
+}
+
+.add-flower{
+    text-decoration: none;
+    border-radius: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: var(--color-green);
+    color: white;
+    height: 20px;
+    width: 20px;
+    font-size: 20px;
+    padding: 0;
+}
+
+.title-btn{
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    margin-top: 2em;
+    margin-bottom: .5em;
 }
